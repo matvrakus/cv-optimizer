@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+/* landing.module.css */
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #FC8181 0%, #E53E3E 50%, #F7FAFC 100%);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Newsreader', serif;
+}
+
+.header {
+  background-color: #C53030;
+  padding: 1rem 2rem;
+}
+
+.content {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #1A202C;
+  margin-bottom: 3rem;
+  line-height: 1.2;
+  font-family: 'Newsreader', serif;
+}
+
+.emphasis {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.button {
+  background-color: #C53030;
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.25rem;
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #B91C1C;
+}
+
+.logo {
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+  font-family: 'Newsreader', serif;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .button {
+    font-size: 1.1rem;
+    padding: 0.875rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #FC8181 0%, #E53E3E 50%, #F7FAFC 100%);
+  font-family: 'Newsreader', serif;
+}
+
+.header {
+  background-color: #C53030;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+  font-family: 'Newsreader', serif;
+  text-decoration: none;
+}
+
+.content {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #1A202C;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: 'Newsreader', serif;
+}
+
+.emphasis {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.cvContainer {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 3rem;
+}
+
+.cvLabel {
+  font-size: 1.5rem;
+  color: #1A202C;
+  margin-bottom: 1rem;
+  font-family: 'Newsreader', serif;
+  font-weight: 400;
+}
+
+.cvPreview {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  min-height: 600px;
+  padding: 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.cvContent {
+  font-family: 'Newsreader', serif;
+  font-size: 1.1rem;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  color: #1A202C;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  /* Ingen kursiv här, kursiven styrs i .cvText */
+}
+
+.cvContent pre {
+  margin: 0;
+  font-family: inherit;
+  white-space: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.cvText {
+  font-style: italic;  /* Här styr vi kursiven */
+}
+
+.cvPlaceholder {
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  margin-top: 2rem;
+  font-family: 'Newsreader', serif;
+  font-size: 1.1rem;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button {
+  background-color: #C53030;
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  min-width: 180px;
+}
+
+.button:hover {
+  background-color: #B91C1C;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .content {
+    padding: 2rem 1rem;
+  }
+  
+  .cvPreview {
+    min-height: 400px;
+    padding: 1.5rem;
+  }
+  
+  .buttonContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  .cvLabel {
+    font-size: 1.25rem;
+  }
+  
+  .button {
+    font-size: 1rem;
+    padding: 0.875rem 2rem;
+  }
+}
